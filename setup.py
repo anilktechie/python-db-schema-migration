@@ -1,15 +1,12 @@
 from setuptools import setup, find_packages
 
-install_requires = [
-    'Random-Word==1.0.4',
-]
+install_requires = []
 
 setup(
-    name='pypi-name-CHANGEME',
+    name='kt_python_db_schema_migration',
     version='1.0',
-    url='http://github.com/org_CHANGEME/repo_CHANGEME',
-    author='CHANGEME',
-    author_email='CHANGEME',
+    url='http://github.com/k-t-corp/python-db-schema-migration',
+    author='KTachibanaM',
     license='MIT',
     packages=find_packages(),
     zip_safe=False,

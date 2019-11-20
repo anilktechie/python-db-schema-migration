@@ -1,33 +1,16 @@
-# python3-library-starter
-[![Build Status](https://travis-ci.org/org_CHANGEME/repo_CHANGEME.svg?branch=master)](https://travis-ci.org/org_CHANGEME/repo_CHANGEME)
-[![PyPI version](https://badge.fury.io/py/pypi_name_CHANGEME.svg)](https://badge.fury.io/py/pypi_name_CHANGEME)
+# python-db-schema-migration
+[![Build Status](https://travis-ci.org/k-t-corp/python-db-schema-migration.svg?branch=master)](https://travis-ci.org/k-t-corp/python-db-schema-migration)
+[![PyPI version](https://badge.fury.io/py/kt_python_db_schema_migration.svg)](https://badge.fury.io/py/kt_python_db_schema_migration)
 
-Simple Python 3 library starter
+An opinionated library to migrate database schemas in Python
 
 ## Prerequisites
 * `Python 3.7`
 * [`virtualenv`](https://packaging.python.org/guides/installing-using-pip-and-virtualenv/)
 
-## Usage
+## Develop
 ```bash
-git clone git@github.com:k-t-corp/python3-library-starter.git
-cd python3-library-starter
-rm -rf .git
-nano setup.py  # pay close attention to the CHANGEME's
-mv python3_library_starter pypi_name  # rename the library package name, of course.
-nano README.md  # change readme, of course. pay close attention to CHANGEME's in urls of the badges.
-git init
 python3 -m virtualenv venv
 source venv/bin/activate
 python setup.py develop
 ```
-
-## Setup publishing library to PyPI via Travis CI
-1. Make sure the library name doesn't clash
-2. Create a new token on PyPI
-3. Enable the project on Travis CI
-4. Run `travis encrypt <token> --add deploy.password`
-5. Commit and push the change
-
-## Publish the library to PyPI via Travis CI
-Just create a new GitHub release
