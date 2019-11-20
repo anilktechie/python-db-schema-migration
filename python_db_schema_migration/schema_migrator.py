@@ -9,6 +9,8 @@ class SchemaMigrator(object):
         self.logger = logging.getLogger('kt_python_db_schema_migration')
         self.logger.setLevel(logging.INFO)
         self.schema_versioner = schema_versioner
+        if not migrations:
+            raise RuntimeError("Need to have at least one migration")
         self.latest_schema_version = max(map(lambda m: m.to_version(), migrations))
         # check if all migrations form a linear sequence
         # e.g. migrations can be ordered (0...latest_schema_version - 1) w.r.t. from_version

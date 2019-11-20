@@ -14,3 +14,9 @@ python3 -m virtualenv venv
 source venv/bin/activate
 python setup.py develop
 ```
+
+## Run tests
+```bash
+source venv/bin/activate
+python setup.py test
+```

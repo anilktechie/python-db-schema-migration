@@ -3,7 +3,7 @@ language: python
 python:
 - '3.7'
 script:
-- echo
+- python setup.py test
 deploy:
   provider: pypi
   user: __token__

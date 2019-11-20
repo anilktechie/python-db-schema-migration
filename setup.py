@@ -10,5 +10,6 @@ setup(
     license='MIT',
     packages=find_packages(),
     zip_safe=False,
-    install_requires=install_requires
+    install_requires=install_requires,
+    test_suite="python_db_schema_migration_tests",
 )
