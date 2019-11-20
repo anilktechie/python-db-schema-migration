@@ -1,19 +1,6 @@
 import sqlite3
-from contextlib import contextmanager
+from .sqlite_execute import sqlite_execute
 from .schema_versioner import SchemaVersioner
-
-
-@contextmanager
-def sqlite_execute(conn, q, params=()):
-    cursor = conn.cursor()
-    try:
-        cursor = conn.cursor()
-        cursor.execute(q, params)
-        conn.commit()
-        yield cursor
-    finally:
-        cursor.close()
-        conn.close()
 
 
 class SqliteSchemaVersioner(SchemaVersioner):
